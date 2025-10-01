@@ -1,0 +1,44 @@
+p {
+    color: green;
+}
+#titol {
+    font-size: 3em;
+    text-decoration: underline;
+}
+.text-important {
+    color: red;
+    font-weight: bold;
+}
+.vermell {
+    color: red;
+}
+.gran {
+    font-size: 24px;
+}
+.negreta {
+    font-weight: bold;
+}
+.subratllat {
+    text-decoration: underline;
+}
+a:hover {
+    color: aqua;
+    cursor: pointer;
+}
+p::before {
+    color: blue;
+    content: "<<";
+}
+p::after {
+    color: green;
+    content: ">>";
+}
+#llista_index li:first-child {
+    color: red;
+}
+#llista_index li:nth-child(2) {
+    color: green;
+}
+#llista_index li:last-child {
+    color: blue;
+}
