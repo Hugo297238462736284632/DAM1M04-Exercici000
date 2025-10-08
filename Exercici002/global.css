@@ -1,0 +1,14 @@
+.menu_ini {
+    border: 5px solid red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.menu_mitj {
+    border: 5px solid blue;
+    margin-top: 70px;
+}
+.peu {
+    border: 5px solid green;
+    margin-top: 90px;
+}
