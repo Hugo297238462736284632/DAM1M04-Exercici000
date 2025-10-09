@@ -1,14 +1,25 @@
-.menu_ini {
-    border: 5px solid red;
+.barra_fixed {
     position: fixed;
-    top: 0;
+    top: 0; 
+    left: 0;
     width: 100%;
+    padding: 15px;
+    background-color: rgb(24, 216, 200);
+    text-align: center;
+    z-index: 1000;
 }
 .menu_mitj {
-    border: 5px solid blue;
+    background-color: blue;
+    text-align: center;
     margin-top: 70px;
+    padding: 40px 0;
 }
 .peu {
-    border: 5px solid green;
-    margin-top: 90px;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+
 }
