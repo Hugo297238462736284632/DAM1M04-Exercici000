@@ -1,14 +1,27 @@
 .menu_ini {
-    border: 5px solid red;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    text-align: center;
+    background-color: rgb(156, 20, 20);
+    height: 40px;
+    justify-content: space-evenly;
+}
+a {
+    color:rgb(176, 202, 26) ;
+    font-size: 20px;
 }
 .menu_mitj {
     border: 5px solid blue;
     margin-top: 70px;
+    border-radius: 30px;
 }
-.peu {
+footer  {
     border: 5px solid green;
     margin-top: 90px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    text-align: center;
 }
