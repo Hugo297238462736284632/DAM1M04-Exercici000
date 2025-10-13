@@ -1,34 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Georgia, serif;
-    background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.5;
 }
-.menu_fixed {
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    background-color: #333;
-    text-align: center;
-    padding: 15px 0;
-    z-index: 1000;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.menu_fixed a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+
+/* --- Menú fix --- */
+.menu_fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #b22222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  font-weight: bold;
 }
-.contingut {
-    margin-top: 70px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+.menu_fix a:hover {
+  color: #ffd700;
 }
-footer {
-    background-color: #333;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
-    margin-top: 15px;
-    color: white;
+
+/* --- Contenidor principal --- */
+.contenidor {
+  max-width: 1100px;
+  margin: 80px auto 0;
+  padding: 20px;
+}
+
+/* --- Capçalera (hero) --- */
+.capcalera {
+  background: #f88526;
+  color: #000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.capcalera h1 {
+  font-size: 2.5em;
+}
+
+.capcalera p {
+  margin: 15px 0 25px;
+  font-size: 1.2em;
+}
+
+.capcalera button {
+  background: #140e01;
+  color: #fff;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.capcalera button:hover {
+  background: #8b1a1a;
+}
+
+/* --- Peu de pàgina --- */
+.peu {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
 }

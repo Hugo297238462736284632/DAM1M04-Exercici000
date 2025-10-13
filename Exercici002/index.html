@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuBodega - Inici</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .colleccions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 60px 0;
+    }
+    .targeta {
+      flex: 1 1 calc(33.33% - 20px);
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .targeta span {
+      display: inline-block;
+      background: #b22222;
+      color: #fff;
+      font-size: .8em;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin: 2px;
+    }
+    .beneficis {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #b22222;
+      color: #fff;
+      padding: 15px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu_fix">
+    <a href="index.html">Inici</a>
+    <a href="productes.html">Productes</a>
+    <a href="contacte.html">Contacte</a>
+  </div>
+
+  <section class="capcalera">
+    <h1>Benvingut a TuBodega</h1>
+    <p>La millor selecció de vins, caves i destil·lats per a moments especials.</p>
+    <button>Descobreix la col·lecció</button>
+  </section>
+
+  <div class="contenidor">
+    <section class="colleccions">
+      <div class="targeta">
+        <h3>Vins Selectes</h3>
+        <p>Descobreix vins amb personalitat, escollits pels nostres sommeliers.</p>
+        <span>Negres</span> <span>Blancs</span> <span>Rosats</span>
+      </div>
+      <div class="targeta">
+        <h3>Caves i Xampanys</h3>
+        <p>Bombolles per brindar amb estil i celebrar cada moment.</p>
+        <span>Reserva</span> <span>Gran Reserva</span> <span>Brut</span>
+      </div>
+      <div class="targeta">
+        <h3>Destil·lats Premium</h3>
+        <p>Whisky, rom, ginebra i molt més, de marques exclusives.</p>
+        <span>Whisky</span> <span>Rom</span> <span>Ginebra</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="beneficis">
+    <span>Enviament 48h</span>
+    <span>Canvis gratuïts</span>
+    <span>Pagament segur</span>
+  </div>
+
+  <footer class="peu">© 2025 TuBodega · info@tubodega.cat</footer>
+</body>
+</html>

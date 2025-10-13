@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-       <meta charset="UTF-8">
-       <link rel="stylesheet" href="global.css">
-       <title>Productes</title>
-   </head>
-   <body>
-    <div class="menu_fixed">
-        <a href="imdex.html">Index</a>
-        <a href="productes.html">productes</a>
-        <a href="contacte.html">Contacte</a>
-    </div>
-    <div class="contingut">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuBodega - Productes</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .filtres {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 90px 0 30px;
+      flex-wrap: wrap;
+    }
+    .filtres span {
+      background: #b22222;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: .9em;
+    }
+    .filtres span:hover { background: #8b1a1a; }
+    .productes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .targeta-producte {
+      flex: 1 1 260px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      background: #fafafa;
+      text-align: center;
+    }
+    .targeta-producte img {
+      width: 300px;
+      height: auto;
+      background: #ccc;
+      border-radius: 6px;
+    }
+    .targeta-producte h4 { margin: 10px 0 5px; }
+    .targeta-producte p { color: #b22222; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="menu_fix">
+    <a href="index.html">Inici</a>
+    <a href="productes.html">Productes</a>
+    <a href="contacte.html">Contacte</a>
+  </div>
 
+  <div class="contenidor">
+    <div class="filtres">
+      <span>Tots</span>
+      <span>Vins</span>
+      <span>Caves</span>
+      <span>Destil·lats</span>
     </div>
-    <footer>
 
-    </footer>
-       
-   </body>
+    <section class="productes">
+      <div class="targeta-producte">
+        <img src="https://imgs.search.brave.com/SV8Z0RtN1CA-ZSPEbAwMH0JF4H8FGVr-CYwp_bKAfTM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3JhdW9ubGluZS5j/YXQvaW1nL3Byb2R1/Y3Rvcy9zaW5vbHMt/dmktZGUtZ3VhcmRh/LXJlc2VydmFfX1ZD/QTgyMDEuanBn" alt="vi Negre" >
+        <h4>Vi Negre Reserva</h4><p>€14.95</p>
+      </div>
+      <div class="targeta-producte">
+        <img src="https://imgs.search.brave.com/Zuv0wVPvGLZuBPaVQiWfQbSCBep9nMUu6NzS1h_-M-Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3JhdW9ubGluZS5l/cy9pbWcvcHJvZHVj/dG9zL2NhdmEtYW1i/LWNvci1icnV0LXJl/c2VydmFfX0NBVjEz/NjYuanBn" alt="Cava" >
+        <h4>Cava Brut Nature</h4><p>€12.50</p>
+      </div>
+      <div class="targeta-producte">
+        <img src="https://imgs.search.brave.com/yzPMK1uHGuRAT1n-Le2rex5PikQ6L7L-K-IJXViCXXE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzkzNzkwMy1NTEI4/MTU0Mzg0OTY2OF8w/MTIwMjUtVi53ZWJw" alt="Blue label">
+        <h4>Whisky Premium</h4><p>€39.00</p>
+      </div>
+      <div class="targeta-producte">
+        <img src="https://imgs.search.brave.com/X9R6FN6lTyEIi4kuQho-lyam1QmSD2SwS6GtwVDn1n8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3JhdW9ubGluZS5j/YXQvaW1nL3Byb2R1/Y3Rvcy9hbGJhcmlu/by1jb25kZXMtZGUt/YWxiYXJlaV9fVkdB/MDgyLmpwZw" alt="Vi blanc">
+        <h4>Vi Blanc Jove</h4><p>€9.80</p>
+      </div>
+    </section>
+  </div>
+
+  <footer class="peu">© 2025 TuBodega · info@tubodega.cat</footer>
+</body>
 </html>

@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-       <meta charset="UTF-8">
-       <link rel="stylesheet" href="global.css">
-       <title>Contacte</title>
-   </head>
-   <body>
-    <div class="barra_fixed">
-        <a href="imdex.html">Index</a>
-        <a href="productes.html">productes</a>
-        <a href="contacte.html">Contacte</a>
-    </div>
-    <div class="menu_mitj">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuBodega - Contacte</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .graella-contacte {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 90px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    textarea { resize: vertical; min-height: 100px; }
+    button { background: #b22222; color: #fff; border: 0; cursor: pointer; }
+    button:hover { background: #8b1a1a; }
+    .info-contacte {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .mapa-ficticia {
+      background-image: url(https://imgs.search.brave.com/XSAtqlWDzqA0Vp2yrZVqma599sRxV5eduxEP6wtcSG4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5mb3J0bml0ZWFw/aS5pby9pbWFnZXMv/bWFwcy9tYXAtMTAu/MC5wbmc);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 450px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="menu_fix">
+    <a href="index.html">Inici</a>
+    <a href="productes.html">Productes</a>
+    <a href="contacte.html">Contacte</a>
+  </div>
 
-    </div>
-    <div class="peu">
+  <div class="contenidor">
+    <section class="graella-contacte">
+      <div>
+        <h2>Formulari de contacte</h2>
+        <form>
+          <input type="text" placeholder="Nom complet" required>
+          <input type="email" placeholder="Correu electrònic" required>
+          <textarea placeholder="Missatge..." required></textarea>
+          <button>Enviar</button>
+        </form>
+      </div>
 
-    </div>
-       
-   </body>
+      <div class="info-contacte">
+        <h2>Informació de contacte</h2>
+        <p><strong>Adreça:</strong> Carrer del Vi 12, Barcelona</p>
+        <p><strong>Horari:</strong> Dl-Dv 10h - 20h</p>
+        <p><strong>Telèfon:</strong> 93 123 45 67</p>
+        <div class="mapa-ficticia"></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="peu">© 2025 TuBodega · info@tubodega.cat</footer>
+</body>
 </html>
